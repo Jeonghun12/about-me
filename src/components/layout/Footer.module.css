@@ -1,0 +1,8 @@
+.footer { min-height: 108px; display: flex; justify-content: space-between; align-items: center; gap: 20px; color: var(--muted); font-size: 12px; }
+.footer p { display: flex; gap: 10px; align-items: center; }
+.footer strong { color: var(--text); font-size: 20px; letter-spacing: -1px; }
+.footer strong span { color: var(--accent); }
+.divider { color: #b1a9ae; }
+.footer a { text-decoration: none; padding-block: 12px; }
+.footer a:hover { color: var(--accent); }
+@media (max-width: 400px) { .footer { font-size: 10px; } }

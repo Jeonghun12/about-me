@@ -1,0 +1,26 @@
+.section { display: grid; grid-template-columns: 330px 1fr; gap: 50px; padding-block: 88px 100px; }
+.heading h2 { font-size: 30px; line-height: 1.3; margin: 0 0 12px; letter-spacing: -1px; font-weight: 750; }
+.heading p { color: var(--muted); font-size: 15px; margin: 0; }
+.timeline { margin: 0; padding: 0 0 0 32px; list-style: none; border-left: 1px solid #efd4e0; }
+.item { position: relative; display: grid; grid-template-columns: 65px 1fr; gap: 20px; padding-bottom: 25px; }
+.item + .item { padding-top: 25px; border-top: 1px solid var(--border); }
+.item:last-child { padding-bottom: 0; }
+.dot { position: absolute; top: 5px; left: -38px; width: 11px; height: 11px; border: 1.5px solid var(--accent); background: white; border-radius: 50%; }
+.item + .item .dot { top: 30px; }
+.year { font-size: 16px; font-weight: 650; line-height: 26px; }
+.titleRow { display: flex; align-items: center; gap: 16px; justify-content: space-between; }
+.titleRow h3 { margin: 0; font-size: 19px; font-weight: 600; line-height: 26px; letter-spacing: -.4px; }
+.titleRow a { text-decoration: none; }
+.titleRow a:hover { color: var(--accent); }
+.status { font-size: 10px; color: var(--muted); white-space: nowrap; }
+.summary { color: var(--muted); font-size: 12px; line-height: 1.7; margin: 9px 0 5px; word-break: keep-all; }
+.period { color: var(--muted); font-size: 10px; letter-spacing: .3px; margin: 0; font-variant-numeric: tabular-nums; }
+.compact .item { padding-bottom: 16px; }
+.compact .item + .item { padding-top: 16px; }
+.compact .item:last-child { padding-bottom: 0; }
+.compact .item + .item .dot { top: 21px; }
+.overviewLink { display: flex; justify-content: space-between; align-items: center; gap: 16px; min-height: 28px; font-size: 17px; line-height: 1.6; text-decoration: none; }
+.overviewLink:hover { color: var(--accent); }
+@media (pointer: coarse) { .overviewLink { min-height: 44px; } }
+@media (max-width: 1000px) { .section { grid-template-columns: 240px 1fr; gap: 30px; } .heading h2 { font-size: 26px; } }
+@media (max-width: 700px) { .section { grid-template-columns: 1fr; padding-block: 56px 64px; gap: 36px; } .heading h2 { font-size: 26px; } .timeline { margin-left: 6px; padding-left: 26px; } .dot { left: -32px; } .item { grid-template-columns: 48px 1fr; gap: 14px; } .year { font-size: 14px; } .titleRow h3 { font-size: 18px; } }
