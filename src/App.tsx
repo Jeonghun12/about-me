@@ -6,9 +6,11 @@ import { ProfilePage } from './feat/profile/page/ProfilePage';
 import { ProjectsPage } from './feat/project/page/ProjectsPage';
 import { ContactPage } from './feat/contact/page/ContactPage';
 import { MainPage } from './feat/main/page/MainPage';
+import { PharosPage } from './feat/project/page/pharos/PharosPage';
 
 const titles: Record<string, string> = {
   '/': 'Frontend Developer', '/profile': 'Profile', '/projects': 'Projects', '/contact': 'Contact',
+  '/projects/pharos': 'Pharos',
 };
 
 function PageLayout() {
@@ -29,6 +31,7 @@ function PageLayout() {
         <Route path="/" element={<MainPage />} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/projects/pharos" element={<PharosPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="*" element={<section className="container page-heading"><p className="eyebrow">404</p><h1>페이지를 찾을 수 없습니다.</h1><Link className="text-link" to="/">메인으로 돌아가기 ↗</Link></section>} />
       </Routes>

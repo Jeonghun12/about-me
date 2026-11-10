@@ -67,16 +67,19 @@ export function ProjectTimeline({ compact = false }: { compact?: boolean }) {
             <div className={styles.detail}>
               <div className={styles.titleRow}>
                 <h3>
-                  {project.status === 'published' && project.href ? (
-                    <a href={project.href}>
+                  {project.status !== 'draft' && project.href ? (
+                    <Link to={project.href}>
                       {project.title} <span aria-hidden="true">↗</span>
-                    </a>
+                    </Link>
                   ) : (
                     project.title
                   )}
                 </h3>
                 {project.status === 'draft' && (
                   <span className={styles.status}>정리 중</span>
+                )}
+                {project.status === 'sample' && (
+                  <span className={styles.status}>샘플</span>
                 )}
               </div>
               <p className={styles.summary}>{project.summary}</p>

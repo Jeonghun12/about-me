@@ -19,7 +19,7 @@ npm install
 npm run dev
 ```
 
-터미널에 표시되는 로컬 주소를 엽니다. Node.js 22.12 이상을 권장합니다.
+`http://localhost:3000/`을 엽니다. 개발 서버는 3000번 포트로 고정되어 있으며, 이미 사용 중이면 오류를 표시합니다. 기존 서버는 종료한 뒤 다시 실행하세요. Node.js 22.12 이상을 권장합니다.
 
 ```sh
 npm run typecheck

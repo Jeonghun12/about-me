@@ -15,6 +15,6 @@ export interface Project {
   startDate: string;
   period: string;
   summary: string;
-  status: 'draft' | 'published';
+  status: 'draft' | 'sample' | 'published';
   href?: string;
 }

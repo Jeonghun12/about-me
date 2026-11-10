@@ -6,4 +6,9 @@
   --blush: #fdf1f6;
   --border: #e5e5ea;
   --content-width: 1120px;
+  --header-height: 80px;
+}
+
+@media (max-width: 600px) {
+  :root { --header-height: 68px; }
 }

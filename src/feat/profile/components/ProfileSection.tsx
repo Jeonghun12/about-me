@@ -70,7 +70,7 @@ export function ProfileSection({ showContacts = false }: { showContacts?: boolea
               href={`mailto:${profile.email}`}>
                 Email ↗
             </a> 
-          : <span>Email <small>준비 중</small></span>            
+          : <span>Email <small></small></span>            
           }
           {profile.github ? 
             <a 
@@ -83,7 +83,7 @@ export function ProfileSection({ showContacts = false }: { showContacts?: boolea
         </div>
        }
 
-       
+
     </div>
   </section>
   

@@ -1,8 +1,22 @@
-.header { min-height: 104px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border); gap: 24px; }
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  flex-shrink: 0;
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+}
+.inner {
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
 .logo { font-size: 32px; font-weight: 850; letter-spacing: -2px; text-decoration: none; }
 .logo span { color: var(--accent); }
 .header nav { display: flex; gap: 36px; }
 .header nav a { font-size: 14px; font-weight: 550; text-decoration: none; padding-block: 12px; }
 .header nav a:hover { color: var(--accent); }
 .header nav a[aria-current="page"] { color: var(--accent); text-decoration: underline; text-decoration-thickness: 2px; }
-@media (max-width: 600px) { .header { min-height: 84px; } .header nav { gap: 20px; } .header nav a { font-size: 12px; } .logo { font-size: 28px; } }
+@media (max-width: 600px) { .header nav { gap: 20px; } .header nav a { font-size: 12px; } .logo { font-size: 28px; } }
