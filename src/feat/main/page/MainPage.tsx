@@ -4,5 +4,13 @@ import { ProjectTimeline } from '../../project/components/ProjectTimeline';
 import { ContactSection } from '../../contact/components/ContactSection';
 
 export function MainPage() {
-  return <><ProfileSection showContacts /><IntroSection /><ProjectTimeline compact /><ContactSection /></>;
+  
+  return (<>
+  
+    <ProfileSection showContacts />
+      <IntroSection />
+    <ProjectTimeline compact />
+    <ContactSection />
+
+  </>);
 }

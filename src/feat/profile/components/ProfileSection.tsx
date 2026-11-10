@@ -69,10 +69,21 @@ export function ProfileSection({ showContacts = false }: { showContacts?: boolea
               className="text-link" 
               href={`mailto:${profile.email}`}>
                 Email ↗
-            </a> : <span>Email <small>준비 중</small></span>}
-        {profile.github ? <a className="text-link" href={profile.github}>GitHub ↗</a> : <span>GitHub <small>준비 중</small></span>}
+            </a> 
+          : <span>Email <small>준비 중</small></span>            
+          }
+          {profile.github ? 
+            <a 
+              className="text-link" 
+              href={profile.github}>
+                  GitHub ↗
+            </a> 
+          : <span>GitHub <small>준비 중</small></span>
+          }
         </div>
        }
+
+       
     </div>
   </section>
   
